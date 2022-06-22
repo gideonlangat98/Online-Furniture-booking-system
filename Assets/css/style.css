@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url();
+}
+
 .top{
     display: flex;
     justify-content: space-around;
@@ -69,3 +75,10 @@
     background-image: cover;
     margin-left: 50px;
 }
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
