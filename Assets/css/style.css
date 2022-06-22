@@ -71,6 +71,17 @@ body {
     border-radius: 5px;
 }
 
+.btn3{
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
 .home-img{
     background-image: cover;
     margin-left: 50px;
@@ -88,7 +99,7 @@ body {
     font-size: 25px;
     margin-top: 30px;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: honeydew;
 }
 
 #products h3{
@@ -96,13 +107,21 @@ body {
     padding-top: 30px;
 }
 
+#products h4{
+    margin-top: 50px;
+}
+
 #products p{
     text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: black;
 }
 
 #products ul li{
     text-align: left;
     margin-left: 100px;
+    margin-top: 10px;
 }
 
 
