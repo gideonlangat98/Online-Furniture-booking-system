@@ -1,19 +1,40 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "Furniture": [
+      {
+        "id": 1,
+        "image_url": "https://image.shutterstock.com/image-photo/modern-sofa-260nw-426909265.jpg",
+        "price": "Ksh 50,000",
+        "type": "Sofa Set",
+        "location": "Nairobi, Kenya"
+      },
+      {
+        "id": 2,
+        "image_url": "https://m.media-amazon.com/images/I/61wlCkStj6L.jpg",
+        "price": "Ksh 30,000",
+        "type": "Dinning table",
+        "location": "Nairobi, Kenya"
+      },
+      {
+        "id": 3,
+        "image_url": "https://cdn2.sofadreams.com/media/catalog/product/cache/c41fae4236734eb803fb4c6a8d783161/r/e/recliner_motion_sofa_massimo_caramel_1.jpg",
+        "price": "Ksh 70,000",
+        "type": "Motion Sofa",
+        "location": "Nairobi, Kenya"
+      },
+      {
+        "id": 4,
+        "image_url": "",
+        "price": "Ksh 5,000",
+        "type": "Bar Stool",
+        "location": "Nairobi, Kenya"
+      },
+      {
+        "id": 5,
+        "image_url": "",
+        "price": "Ksh 10,500",
+        "type": "Office Chair",
+        "location": "Nairobi, Kenya"
+      }
+      ]
 }
+

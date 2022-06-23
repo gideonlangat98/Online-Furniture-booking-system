@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online-Furniture-booking system</title>
     <link rel="stylesheet" href="./Assets/css/style.css">
-    <script src="/script.js"></script>
 </head>
 <body>
     <!--nav-->
@@ -49,24 +48,30 @@
             <div class="row">
                 <div class="input-form">
                     <span class="input-Text" id="the-Text"></span>
-                    <input type="text" class="form1" name="User Name" placeholder="User Name" aria-label="User Name" aria-describedby="the-Text">
+                    <input type="text" class="form1" name="=Name" placeholder="Name" aria-label="name" aria-describedby="the-Text">
                 </div>
 
                 <div class="input-form">
                     <span class="input-Text" id="the-Text"></span>
-                    <input type="text" class="form1" name="Password" placeholder="Password" aria-label="Password" aria-describedby="the-Text">
+                    <input type="text" class="form1" name="Description" placeholder="Description" aria-label="Description" aria-describedby="the-Text">
                 </div>
                 
-                <button class="form-submit">Login</button>
+                <button id="form-submit" onclick="myFunction">Login</button>
 
-                <div class="new-user">
+                <!-- <div class="new-user">
                 <h3>New User ?</h3>
                 <a href="#">Register here</a>
-                </div>
-                
+                </div> -->
+
                 </div>
 
             </div>
+
+            <ul id="furniture-list" class="cards"></ul>
+            
+             <!--furniture-list-->
+                
+
         </form>
     </div>
     
@@ -102,7 +107,7 @@
         </div>
 
         <div class="backg2-img">
-            <img src="./Assets/images/products.webp" alt="bar-stool" height="300px">
+            <img src="./Assets/images/backg3.webp" alt="bar-stool" height="300px">
         </div>
         </div>
 
@@ -137,11 +142,14 @@
     </div>
 
     <!--footer-->
+
         <footer>
         <div class="footer">
             <h1>Contact us</h1>
         </div>
         </footer>
+
+    <script src="./Assets/js/script.js"></script>
 
 </body>
 </html>
