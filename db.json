@@ -4,7 +4,7 @@
         "id": 1,
         "imageurl": "https://image.shutterstock.com/image-photo/modern-sofa-260nw-426909265.jpg",
         "price": "Ksh 50,000",
-        "Description": "Sofa Set",
+        "type": "Sofa Set",
         "location": "Nairobi, Kenya"
       },
       {

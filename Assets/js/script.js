@@ -6,12 +6,12 @@ function renderOneFurniture(furniture) {
   card.innerHTML = `
   <img src = "${furniture.imageurl}">
   <div class = 'content'>
-  <h3> ${furniture.Description} </h3>
+  <h3> ${furniture.type} </h3>
 
   <p>
   <span class = 'price-value'> ${furniture.price} </span>
   <p>
-  <p> ${furniture.Description} </p>
+  <p> ${furniture.location} </p>
   </div>
 
   <div class = "button">
