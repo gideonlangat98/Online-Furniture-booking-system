@@ -9,7 +9,7 @@ function renderOneFurniture(furniture) {
   <h3> ${furniture.Description} </h3>
 
   <p>
-  $<span class = 'price-value'> ${furniture.type} </span>
+  <span class = 'price-value'> ${furniture.price} </span>
   <p>
   <p> ${furniture.Description} </p>
   </div>
