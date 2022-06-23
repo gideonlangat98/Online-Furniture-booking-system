@@ -249,5 +249,35 @@ h4{
     text-align: center;
 }
 
+.content{
+    margin-left: 400px;
+}
 
+.button{
+    margin-left: 400px;
+}
+
+#buy{
+    background-color: green;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+#order{
+    background-color: goldenrod;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
 

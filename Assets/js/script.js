@@ -4,8 +4,8 @@ function renderOneFurniture(furniture) {
   let card = document.createElement('li')
   card.className = 'card'
   card.innerHTML = `
-  <img src = "${furniture.imageurl}">
   <div class = 'content'>
+  <img src = "${furniture.imageurl}" height="250">
   <h3> ${furniture.type} </h3>
 
   <p>
@@ -15,8 +15,8 @@ function renderOneFurniture(furniture) {
   </div>
 
   <div class = "button">
-  <button> Buy Now </button>
-  <button> Order </button>
+  <button id="buy"> Buy Now </button>
+  <button id="order"> Order </button>
   </div>
   `
   document.querySelector('#furniture-list').appendChild(card) 
