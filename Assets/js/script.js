@@ -4,8 +4,8 @@ function renderOneFurniture(furniture) {
   let card = document.createElement('li')
   card.className = 'card'
   card.innerHTML = `
-  <div class = 'content'>
   <img src = "${furniture.imageurl}" height="250">
+  <div class = 'content'>
   <h3> ${furniture.type} </h3>
 
   <p>
@@ -29,10 +29,7 @@ function getAllFurniture() {
   .then(furnitureData => furnitureData.forEach(furniture => renderOneFurniture(furniture)))
 }
 
-
 function initialize () {
   getAllFurniture()
 }
 initialize()
-
-
