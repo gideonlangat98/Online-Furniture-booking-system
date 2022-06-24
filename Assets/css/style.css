@@ -35,7 +35,7 @@ body {
     font-size: 20px;
 }
 
-.btn{
+#btn{
     color: black;
     background-color: yellow;
     margin-left: 40px;
@@ -81,7 +81,64 @@ body {
     border-radius: 5px;
 }
 
-.form{
+.order {
+    background-color: green;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: static;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    margin-left: 40px;
+}
+
+.form {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    z-index: 9;
+    font-size: 25px;
+    left: 25%;
+    margin-top: 40%;
+}
+
+.form-container {
+    max-width: 230px;
+    padding: 10px;
+    background-color: white;
+    margin-left: 50px;
+    
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.form-container .btn-cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover, .order:hover {
+    opacity: 1;
+}
+
+/* .form{
     background-color: honeydew;
     background-color: black;
     width: min-content;
@@ -138,7 +195,7 @@ h4{
 .new-user a{
     margin-left: 20px;
     font-size: 20px;
-}
+} */
 
 .home-img img{
     margin-left: 100px;

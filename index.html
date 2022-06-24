@@ -20,7 +20,7 @@
             <a href="#">Products</a>
             <a href="#">About us</a>
             <a href="#">Contact</a>
-            <button class="btn">Login</button>
+            <button id="btn" onclick="login()">Login</button>
         </div>
     
     </nav>
@@ -31,7 +31,7 @@
     <div class="home">
         <h3>Classy Rooms Require Furnitures. <br> We make beautifully designed <br> and sustainable furniture</h3>
         <button id="btn2" onclick="myFunction()">Buy Now</button>
-        <button id="btn3">Explore Products</button>
+        <button id="btn3" onclick="explore()">Explore Products</button>
 
     </div>
     <div class="home-img">
@@ -42,48 +42,34 @@
 
     <!--Form-->
 
-    <div class="form">
-        <h4><strong>Customer Order</strong></h3>
-        <form action="" id="addFurnitureForm">
-            <div class="row">
-                <div class="input-form">
-                    <span class="input-Text" id="the-Text"></span>
-                    <input type="text" class="form1" name="=Name" placeholder="Name" aria-label="name" aria-label="name">
-                </div>
+    
+    <div class="row">
 
-                <div class="input-form">
-                    <span class="input-Text" id="the-Text"></span>
-                    <input type="text" class="form1" name="Phone Number" placeholder="Phone Number" aria-label="Description" aria-describedby="the-Text">
-                </div>
+    <div class="form" id="myForm">
+        <form action="" class="form-container">
+    <h3>Customer Order</h3>
 
-                <div class="input-form">
-                    <span class="input-Text" id="the-Text"></span>
-                    <input type="text" class="form1" name="Furniture Type" placeholder="Furniture Type" aria-label="Description" aria-describedby="the-Text">
-                </div>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Your Name" name="name" required>
 
-                <div class="input-form">
-                    <span class="input-Text" id="the-Text"></span>
-                    <input type="text" class="form1" name="Location" placeholder="Location" aria-label="Description" aria-describedby="the-Text">
-                </div>
-                
-                <button id="form-submit" onclick="myFunction">Add To Cart</button>
+    <label for="phone Number"><b>Phone Number</b></label>
+    <input type="Phone Number" placeholder="Phone Number" name="Phone Number" required>
+
+    <label for="furniture"><b>Furniture Name</b></label>
+    <input type="furniture" placeholder="Furniture Name" name="Furniture Name" required>
+
+    <label for="location"><b>Location</b></label>
+    <input type="location" placeholder="Location" name="Location" required>
 
 
-                <!-- <div class="new-user">
-                <h3>New User ?</h3>
-                <a href="#">Register here</a>
-                </div> -->
 
-                </div>
-
-            </div>
-
-            <ul id="furniture-list" class="cards"></ul>
+    <button type="submit" class="btn">Add To Cart</button>
+    <button type="button" class="btn-cancel" onclick="closeForm()">close Form</button>
             
              <!--furniture-list-->
-                
-        </form>
+    </form>
     </div>
+    <ul id="furniture-list" class="cards"></ul>
     
     <div class="icons">
     <div class="transp-icon">

@@ -1,16 +1,11 @@
-//
-const but = document.getElementById('#btn2').click();
-const buttn = document.getElementById('#btn3')
-
-function myFunction(e) {
-  if (e === 'click')
-  but.addEventListener('click')
-  alert('Youareintherightcohort')
+//style furniture order form
+function orderNow() {
+  document.getElementById("myForm").style.display = "block";
 }
-myFunction(e);
 
-
-
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
 
 //Render One furniture
 function renderOneFurniture(furniture) {
@@ -21,21 +16,18 @@ function renderOneFurniture(furniture) {
   <img src = "${furniture.imageurl}" height="250">
   <div class = 'content'>
   <h3> ${furniture.type} </h3>
-
   <p>
   <span class = 'price-value'> ${furniture.price} </span>
   <p>
   <p> ${furniture.location} </p>
   </div>
-
-  <div class = "button">
-  <button id="order"> Order </button>
-</div>
+  <button class="order" onclick="orderNow()">Order</button>
   `
   document.querySelector('#furniture-list').appendChild(card) 
 
 }
 
+//fetch furniture data
 function getAllFurniture() {
   fetch('http://localhost:3000/Furniture')
   .then(resp => resp.json())
