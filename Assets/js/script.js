@@ -1,9 +1,23 @@
-//Render One furniture
+//
+const but = document.getElementById('#btn2').click();
+const buttn = document.getElementById('#btn3')
 
+function myFunction(e) {
+  if (e === 'click')
+  but.addEventListener('click')
+  alert('Youareintherightcohort')
+}
+myFunction(e);
+
+
+
+
+//Render One furniture
 function renderOneFurniture(furniture) {
   let card = document.createElement('li')
   card.className = 'card'
   card.innerHTML = `
+  <div class="container">
   <img src = "${furniture.imageurl}" height="250">
   <div class = 'content'>
   <h3> ${furniture.type} </h3>
@@ -15,9 +29,8 @@ function renderOneFurniture(furniture) {
   </div>
 
   <div class = "button">
-  <button id="buy"> Buy Now </button>
   <button id="order"> Order </button>
-  </div>
+</div>
   `
   document.querySelector('#furniture-list').appendChild(card) 
 
