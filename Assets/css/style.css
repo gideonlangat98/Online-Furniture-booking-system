@@ -16,16 +16,17 @@ body {
     margin-top: 20px;
     background-color: aqua;
     padding: 30px;
+    text-decoration: none;
 }
 
-.top-left a{
+.logo a{
     color: black;
     justify-content: left;
-    text-decoration: none;
     font-size: 25px;
+    text-decoration: none;
 }
 
-.top-right a{
+.top-right li{
     display: flex;
     justify-content: end;
     margin-left: 50px;
@@ -33,6 +34,10 @@ body {
     padding: 5px;
     text-decoration: none;
     font-size: 20px;
+}
+
+.top-right a{
+    text-decoration: none;
 }
 
 #btn{
@@ -82,31 +87,30 @@ body {
 }
 
 .order {
-    background-color: green;
-    color: white;
-    padding: 16px 20px;
+    background-color: goldenrod;
+    color: black;
+    padding: 15px 15px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     border: none;
     cursor: pointer;
     opacity: 0.8;
     position: static;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
-    margin-left: 40px;
+    width: 100px;
+    border-radius: 7px;
 }
 
 .form {
     display: none;
     position: absolute;
-    bottom: 0;
-    right: 60px;
     z-index: 9;
+    margin-left: 40%;
+    margin-top: 25%;
     font-size: 25px;
-    left: 25%;
-    margin-top: 40%;
 }
 
-.form-container {
+#form-container {
     max-width: 230px;
     padding: 10px;
     background-color: white;
@@ -114,12 +118,12 @@ body {
     
 }
 
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+#form-container input[type=text]:focus, #form-container input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
 
-.form-container .btn {
+#form-container .btn {
     background-color: #04AA6D;
     color: white;
     padding: 16px 20px;
@@ -130,72 +134,13 @@ body {
     opacity: 0.8;
 }
 
-.form-container .btn-cancel {
+#form-container .btn-cancel {
     background-color: red;
 }
 
-.form-container .btn:hover, .order:hover {
+#form-container .btn:hover, .order:hover {
     opacity: 1;
 }
-
-/* .form{
-    background-color: honeydew;
-    background-color: black;
-    width: min-content;
-    padding-right: 70px;
-    margin-left: 300px;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    justify-content: right;
-}
-
-h4{
-    margin-left: 150px;
-    margin-bottom: 10px;
-    color: rgb(30, 210, 54);
-    font-size: 25px;
-}
-
-.input-form{
-    padding-bottom: 15px;
-    margin-left: 90px;
-}
-
-.form1{
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
-}
-
-#form-submit{
-    background-color: yellow;
-    color: black;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 160px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    border-radius: 5px;
-}
-
-.new-user{
-    display: flex;
-    margin-right: 50px;
-    margin-top: 20px;
-}
-
-.new-user h3{
-    color: rgb(139, 0, 81);
-    margin-left: 70px;
-}
- 
-.new-user a{
-    margin-left: 20px;
-    font-size: 20px;
-} */
 
 .home-img img{
     margin-left: 100px;
@@ -314,31 +259,7 @@ img{
     margin-left: 30px;
 }
 
-#buy{
-    background-color: green;
-    color: white;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-}
 
-#order{
-    background-color: goldenrod;
-    color: black;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-}
 
 
 

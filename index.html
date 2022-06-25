@@ -11,15 +11,15 @@
     <!--nav-->
 
     <nav class="top">
-        <div class="top-left">
+        <div class="logo">
             <a href="#">My <span style="color: goldenrod;">Furniture</span></a>
         </div>
     
         <div class="top-right">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">About us</a>
-            <a href="#">Contact</a>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li> <a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
             <button id="btn" onclick="login()">Login</button>
         </div>
     
@@ -42,11 +42,8 @@
 
     <!--Form-->
 
-    
-    <div class="row">
-
     <div class="form" id="myForm">
-        <form action="" class="form-container">
+        <form action="" id="form-container">
     <h3>Customer Order</h3>
 
     <label for="name"><b>Name</b></label>
@@ -65,11 +62,12 @@
 
     <button type="submit" class="btn">Add To Cart</button>
     <button type="button" class="btn-cancel" onclick="closeForm()">close Form</button>
-            
-             <!--furniture-list-->
+        
     </form>
     </div>
-    <ul id="furniture-list" class="cards"></ul>
+    <ul id="furniture-list" class="card"></ul>
+
+    <!--services-->
     
     <div class="icons">
     <div class="transp-icon">

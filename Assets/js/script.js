@@ -7,8 +7,24 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
+//Event Listeners
+document.querySelector('#form-container').addEventListener('submit', handleSubmit)
+
+//EventHandlers
+function handleSubmit(e) {
+  e.preventDefault()
+  let furnitureObj = {
+    imageurl: e.target.imageurl.value,
+    price: e.target.price.value,
+    type: e.target.type.value,
+    location: e.target.location.value
+  }
+  renderOneFurniture(furnitureObj)
+}
+
 //Render One furniture
 function renderOneFurniture(furniture) {
+  //Build necessary furniture online shopping details
   let card = document.createElement('li')
   card.className = 'card'
   card.innerHTML = `
@@ -23,6 +39,7 @@ function renderOneFurniture(furniture) {
   </div>
   <button class="order" onclick="orderNow()">Order</button>
   `
+  //Add furniture price, and necessary details to the DOM
   document.querySelector('#furniture-list').appendChild(card) 
 
 }
