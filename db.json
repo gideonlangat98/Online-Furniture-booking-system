@@ -41,7 +41,7 @@
         "price": "Ksh 10,500",
         "type": "Bar Stool",
         "location": "Nairobi, Kenya"
-      },
+      }, 
       {
         "id": 7,
         "imageurl": "https://dignity.co.ke/wp-content/uploads/2022/03/Jirawi-Nesting-Table-scaled-e1647241070836.jpg",
@@ -65,4 +65,5 @@
       }
       ]
 }
+
 
