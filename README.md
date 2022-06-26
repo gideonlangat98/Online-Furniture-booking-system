@@ -22,7 +22,7 @@ Requirements:
 Access to a computer or any other garget
 Access to internet [Go Back to the top]
 
-Live Link:
+Live Link: https://gideonlangat98.github.io/Online-Furniture-booking-system/
 
 Figma link: 
 
