@@ -1,5 +1,5 @@
-
-     [
+{
+    "furniture": [
       {
         "id": 1,
         "imageurl": "https://image.shutterstock.com/image-photo/modern-sofa-260nw-426909265.jpg",
@@ -36,39 +36,33 @@
         "location": "Nairobi, Kenya"
       },
       {
-        "id": 5,
+        "id": 6,
         "imageurl": "https://cdn.shopify.com/s/files/1/0511/4688/3268/files/Christy-Website_banner-1-01-01_28630d93-f696-47aa-beee-cb8f32875bcf_1024x1024_crop_center.jpg?v=1643255384",
         "price": "Ksh 10,500",
         "type": "Office Chair",
         "location": "Nairobi, Kenya"
       },
       {
-        "id": 5,
+        "id": 7,
         "imageurl": "https://cdn.shopify.com/s/files/1/0511/4688/3268/files/Christy-Website_banner-1-01-01_28630d93-f696-47aa-beee-cb8f32875bcf_1024x1024_crop_center.jpg?v=1643255384",
         "price": "Ksh 10,500",
         "type": "Office Chair",
         "location": "Nairobi, Kenya"
       },
       {
-        "id": 5,
+        "id": 8,
         "imageurl": "https://cdn.shopify.com/s/files/1/0511/4688/3268/files/Christy-Website_banner-1-01-01_28630d93-f696-47aa-beee-cb8f32875bcf_1024x1024_crop_center.jpg?v=1643255384",
         "price": "Ksh 10,500",
         "type": "Office Chair",
         "location": "Nairobi, Kenya"
       },
       {
-        "id": 5,
-        "imageurl": "https://cdn.shopify.com/s/files/1/0511/4688/3268/files/Christy-Website_banner-1-01-01_28630d93-f696-47aa-beee-cb8f32875bcf_1024x1024_crop_center.jpg?v=1643255384",
-        "price": "Ksh 10,500",
-        "type": "Office Chair",
-        "location": "Nairobi, Kenya"
-      },
-      {
-        "id": 5,
+        "id": 9,
         "imageurl": "https://cdn.shopify.com/s/files/1/0511/4688/3268/files/Christy-Website_banner-1-01-01_28630d93-f696-47aa-beee-cb8f32875bcf_1024x1024_crop_center.jpg?v=1643255384",
         "price": "Ksh 10,500",
         "type": "Office Chair",
         "location": "Nairobi, Kenya"
       }
       ]
+}
 

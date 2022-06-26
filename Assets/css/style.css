@@ -60,14 +60,14 @@ body {
     font-size: 30px;
     line-height: 3rem;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 #btn3{
-    background-color: white;
+    background-color: goldenrod;
     color: black;
     margin-top: 10px;
-    margin-left: 120px;
+    margin-left: 100px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -132,7 +132,14 @@ body {
 }
 
 .home-img img{
+    margin-left: 300px;
+}
+
+h2 {
     margin-left: 100px;
+    background-color: yellow;
+    width: fit-content;
+    padding: 10px;
 }
 
 .icons{
@@ -227,19 +234,6 @@ body {
     text-align: center;
 }
 
-.footer{
-    background-color: darkslategray;
-    padding-top: 10px;
-    padding-bottom: 60px;
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 50px;
-}
-
-.footer{
-    text-align: center;
-}
-
 img{
     margin-left: 30px;
 }
@@ -252,11 +246,36 @@ img{
     list-style-type: none;
     margin-top: 100px;
     width: 90%;
-    display: flex;
+    display: grid;
     grid-gap: 30px;
-    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+    grid-template: auto / repeat(auto-fit, minmax(350px, 1fr));
     padding-left: 20px;
 }
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkslategray;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.news{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.newsletter{
+    margin-left: 30px;
+}
+
+.soci{
+    margin-right: 30px;
+}
+
+
 
 
 
