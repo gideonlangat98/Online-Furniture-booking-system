@@ -30,30 +30,29 @@
     <div id="home-page">
     <div class="home">
         <h3>Classy Rooms Require Furnitures. <br> We make beautifully designed <br> and sustainable furniture</h3>
-        <button id="btn2" onclick="myFunction()">Buy Now</button>
         <button id="btn3" onclick="explore()">Explore Products</button>
 
     </div>
     <div class="home-img">
-        <img src="./Assets/images/background.jpg" alt="Background Image" height="300">
+        <img src="./Assets/images/background.jpg" alt="Background Image" height="200">
     </div>
     </div>
 
 
     <!--Form-->
 
-    <div class="form" id="myForm">
+    <div class="form" id="myForm" onsubmit="myOrder()">
         <form action="" id="form-container">
     <h3>Customer Order</h3>
 
     <label for="name"><b>Name</b></label>
     <input type="text" placeholder="Enter Your Name" name="name" required>
 
-    <label for="phone Number"><b>Phone Number</b></label>
+    <label for="phone Number"><b>phoneNumber</b></label>
     <input type="Phone Number" placeholder="Phone Number" name="Phone Number" required>
 
-    <label for="furniture"><b>Furniture Name</b></label>
-    <input type="furniture" placeholder="Furniture Name" name="Furniture Name" required>
+    <label for="furniture"><b>furnitureName</b></label>
+    <input type="furniture" placeholder="Furniture Name" name="FurnitureName" required>
 
     <label for="location"><b>Location</b></label>
     <input type="location" placeholder="Location" name="Location" required>
@@ -65,13 +64,15 @@
         
     </form>
     </div>
+    
     <ul id="furniture-list" class="card"></ul>
+    <!--Show furniture-list here-->
 
     <!--services-->
     
     <div class="icons">
     <div class="transp-icon">
-        <img src="./Assets/images/transport.png" alt="Free TRansport" height="40px">
+        <img src="./Assets/images/transport.png" alt="Free Transport" height="40px">
         <p>Free Transport</p>
     </div>
 
