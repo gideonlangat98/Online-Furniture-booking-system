@@ -23,7 +23,7 @@ function renderOneFurniture(furniture) {
   card.className = 'card'
   card.innerHTML = `
   <div class="container">
-  <img src = "${furniture.imageurl}" height="200">
+  <img src = "${furniture.imageurl}" height="250">
   <div class = 'content'>
   <h3> ${furniture.type} </h3>
   <p>

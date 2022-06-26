@@ -255,9 +255,9 @@ img{
 .footer{
     display: flex;
     justify-content: space-between;
-    background-color: darkslategray;
+    background-color: aqua;
     padding-top: 10px;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
     font-size: 25px;
     margin-bottom: 50px;
 }
