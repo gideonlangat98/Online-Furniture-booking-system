@@ -42,7 +42,7 @@ function renderOneFurniture(furniture) {
 
 //fetch furniture data
 function getAllFurniture() {
-  fetch('http://localhost:3000/Furniture')
+  fetch('http://localhost:3000/furniture')
   .then(resp => resp.json())
   .then(furnitureData => furnitureData.forEach(furniture => renderOneFurniture(furniture)))
   .catch(err => console.error(err));
