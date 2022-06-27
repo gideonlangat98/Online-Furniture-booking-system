@@ -1,6 +1,19 @@
 const add = document.querySelector('.btn')
 
+//Add event listener to product nav bar link to bring about drop down
+function expand() {
+  if (this.parentNode.getElementsByTagName('ul')[0].style.display == 'block') {
+    return this.parentNode.getElementsByTagName('ul')[0].style.display = 'none'
+    }
+    this.parentNode.getElementsByTagName('ul')[0].style.display = 'block'
+};
 
+let anchor_arr = document.getElementsByClassName('expandable');
+for(let i = 0; i < anchor_arr.length; i ++) {
+  anchor_arr[i].addEventListener('click', expand, false);
+}
+
+//Add alert function to addToCart button
 function myOrder() {
   alert ('YOUR ORDER HAS BEEN PLACED!')
 }
@@ -33,7 +46,6 @@ function renderOneFurniture(furniture) {
   </div>
   </div>
   <button class="order" onclick="orderNow()">Order</button>
-
   `
   //Add furniture price, and necessary details to the DOM
   document.querySelector('#furniture-list').appendChild(card) 
