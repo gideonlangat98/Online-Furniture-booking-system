@@ -8,12 +8,11 @@ function expand() {
     this.parentNode.getElementsByTagName('ul')[0].style.display = 'block'
 };
 
-let anchor_arr = document.getElementsByClassName('expandable');
-for(let i = 0; i < anchor_arr.length; i ++) {
+var anchor_arr = document.getElementsByClassName('expandable');
+for(let i = 0; i<anchor_arr.length; i++) {
   anchor_arr[i].addEventListener('click', expand, false);
 }
 
-//Add alert function to addToCart button
 function myOrder() {
   alert ('YOUR ORDER HAS BEEN PLACED!')
 }
@@ -46,6 +45,7 @@ function renderOneFurniture(furniture) {
   </div>
   </div>
   <button class="order" onclick="orderNow()">Order</button>
+
   `
   //Add furniture price, and necessary details to the DOM
   document.querySelector('#furniture-list').appendChild(card) 
@@ -54,9 +54,9 @@ function renderOneFurniture(furniture) {
 
 //fetch furniture data
 function getAllFurniture() {
-  fetch('https://gideonlangat98.github.io/Online-Furniture-booking-system/db.json')
+  fetch('http://localhost:3000/furniture')
   .then(resp => resp.json())
-  .then(furnitureData => furnitureData.furniture.forEach(furniture => renderOneFurniture(furniture)))
+  .then(furnitureData => furnitureData.forEach(furniture => renderOneFurniture(furniture)))
   .catch(err => console.error(err));
 }
 
