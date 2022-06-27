@@ -11,10 +11,8 @@ body {
     font-family: sans-serif;
 }
 
-
 .wrapper{
-    background-color: goldenrod;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
 }
 
@@ -26,27 +24,68 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.navbar {
+.navbar{
     display: flex;
     justify-content: space-between;
+    background-color: goldenrod;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
-.main-menu li{
-    display: inline-block;
-    margin-right: 50px; 
-    font-size: 23px;
-    text-decoration: none;
+.main-menu{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 70px;
+    list-style: none;
+    font-size: 20px;
 }
 
 .main-menu li a{
+    padding: 30px;
+    list-style-type: none;
     text-decoration: none;
-    color: mediumblue;
 }
 
-.sub-menu li a{
-    color: black;
-    position: static;
+.dropdown-nav{
+    padding: 16px;
+    font-size: 20px;
+    border: none;
 }
+  
+.dropdown{
+    position: relative;
+    display: inline-block;
+    margin-right: 80px;
+}
+  
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-menu ul li a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-menu ul li a:hover{
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+  
+.dropdown:hover .dropdown-nav{
+    background-color: #3e8e41;
+}
+
 
 #btn{
     color: black;

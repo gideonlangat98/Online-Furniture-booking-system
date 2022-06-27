@@ -1,17 +1,9 @@
-const add = document.querySelector('.btn')
+//My code
 
-//Add event listener to product nav bar link to bring about drop down
-function expand() {
-  if (this.parentNode.getElementsByTagName('ul')[0].style.display == 'block') {
-    return this.parentNode.getElementsByTagName('ul')[0].style.display = 'none'
-    }
-    this.parentNode.getElementsByTagName('ul')[0].style.display = 'block'
-};
-
-var anchor_arr = document.getElementsByClassName('expandable');
-for(let i = 0; i<anchor_arr.length; i++) {
-  anchor_arr[i].addEventListener('click', expand, false);
-}
+//Adding event listener to shop button
+document.querySelector('#btn3').addEventListener('click', () => {
+    alert('Shop your favorite furniture below by clicking the order button!')
+})
 
 function myOrder() {
   alert ('YOUR ORDER HAS BEEN PLACED!')
@@ -27,7 +19,6 @@ function closeForm() {
   alert ('Thanks for placing your order!')
 }
 
-
 //Render One furniture
 function renderOneFurniture(furniture) {
   //Build necessary furniture online shopping details
@@ -35,7 +26,7 @@ function renderOneFurniture(furniture) {
   card.className = 'card'
   card.innerHTML = `
   <div class="container">
-  <img src = "${furniture.imageurl}" height="250">
+  <img src = "${furniture.imageurl}" height="230">
   <div class = 'content'>
   <h3> ${furniture.type} </h3>
   <p>
@@ -54,10 +45,10 @@ function renderOneFurniture(furniture) {
 
 //fetch furniture data
 function getAllFurniture() {
-  fetch('https://gideonlangat98.github.io/Online-Furniture-booking-system/db.json')
+  fetch('http://localhost:3000/furniture')
   
   .then(resp => resp.json())
-  .then(furnitureData => furnitureData.furniture.forEach(furniture => renderOneFurniture(furniture)))
+  .then(furnitureData => furnitureData.forEach(furniture => renderOneFurniture(furniture)))
   .catch(err => console.error(err));
 }
 
@@ -65,3 +56,8 @@ function initialize (){
   getAllFurniture()
 }
 initialize()
+
+
+
+
+

@@ -9,28 +9,31 @@
 </head>
 <body>
     <!--nav-->
-<div class="wrapper">
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#">My <span style="color: brown;">Furniture</span></a>
-        </div>
-        <ul class="main-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a class="expandable" href="#">Products</a>
-                <ul class="sub-menu" style="display:none">
-                    <li><a href="#">Standard desk</a></li>
-                    <li><a href="#">Dinning table</a></li>
-                    <li><a href="#">Motion Sofa</a></li>
-                    <li><a href="#">Living room</a></li>
-                    <li><a href="#">Office chair</a></li>
-                    <li><a href="#">Coffee Table Brown</a></li>
-                    <li><a href="#">Cushion fox</a></li>
-                </ul> 
-            </li>
-        </ul>
-    </nav>
-</div>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">My <span style="color: brown;">Furniture</span></a>
+            </div>
+            <ul class="main-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <div class="dropdown">
+                    <li><a class="dropdown-nav" href="#">Products</a></li>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="#">Standard desk</a></li>
+                            <li><a href="#">Dinning table</a></li>
+                            <li><a href="#">Motion Sofa</a></li>
+                            <li><a href="#">Living room</a></li>
+                            <li><a href="#">Office chair</a></li>
+                            <li><a href="#">Coffee Table Brown</a></li>
+                            <li><a href="#">Cushion fox</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </div>
 
     <!--Landing page-->
 
@@ -38,7 +41,7 @@
     <div class="home">
         <h3>Best Quality <br> Furniture  Get <br> Now</h3>
         
-        <button id="btn3" onclick="shop()">Shop Now</button>
+        <button id="btn3">Shop Now</button>
 
     </div>
     <div class="home-img">
@@ -75,8 +78,7 @@
     </form>
     </div>
     <ul id="furniture-list" class="card"></ul>
-    
-    
+
     <!--Show furniture-list here-->
 
     <!--services-->
