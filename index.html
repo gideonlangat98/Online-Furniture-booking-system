@@ -9,22 +9,30 @@
 </head>
 <body>
     <!--nav-->
-
-    <nav class="top">
+<div class="wrapper">
+    <nav class="navbar">
         <div class="logo">
-            <a href="#">My <span style="color: goldenrod;">Furniture</span></a>
+            <a href="#">My <span style="color: brown;">Furniture</span></a>
         </div>
-    
-        <div class="top-right">
+        <ul class="main-menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li> <a href="#">About us</a></li>
-            <button id="btn" onclick="login()">Login</button>
-        </div>
-    
+            <li><a href="#">About</a></li>
+            <li><a class="expandable" href="#">Products</a>
+                <ul class="sub-menu" style="display:none">
+                    <li><a href="#">Standard desk</a></li>
+                    <li><a href="#">Dinning table</a></li>
+                    <li><a href="#">Motion Sofa</a></li>
+                    <li><a href="#">Living room</a></li>
+                    <li><a href="#">Office chair</a></li>
+                    <li><a href="#">Coffee Table Brown</a></li>
+                    <li><a href="#">Cushion fox</a></li>
+                </ul> 
+            </li>
+        </ul>
     </nav>
+</div>
 
-    <!--Homepage-->
+    <!--Landing page-->
 
     <div id="home-page">
     <div class="home">
@@ -34,7 +42,7 @@
 
     </div>
     <div class="home-img">
-        <img src="./Assets/images/sofa1.jpg" alt="Background Image" height="300">
+        <img src="./Assets/images/sofa1.jpg" alt="Background Image" height="400">
     </div>
 
     </div>

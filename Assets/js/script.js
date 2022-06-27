@@ -1,5 +1,17 @@
 const add = document.querySelector('.btn')
 
+//Add event listener to product nav bar link to bring about drop down
+function expand() {
+  if (this.parentNode.getElementsByTagName('ul')[0].style.display == 'block') {
+    return this.parentNode.getElementsByTagName('ul')[0].style.display = 'none'
+    }
+    this.parentNode.getElementsByTagName('ul')[0].style.display = 'block'
+};
+
+var anchor_arr = document.getElementsByClassName('expandable');
+for(let i = 0; i<anchor_arr.length; i++) {
+  anchor_arr[i].addEventListener('click', expand, false);
+}
 
 function myOrder() {
   alert ('YOUR ORDER HAS BEEN PLACED!')
@@ -42,9 +54,9 @@ function renderOneFurniture(furniture) {
 
 //fetch furniture data
 function getAllFurniture() {
-  fetch('http://localhost:3000/furniture')
+  fetch('https://gideonlangat98.github.io/Online-Furniture-booking-system/db.json')
   .then(resp => resp.json())
-  .then(furnitureData => furnitureData.forEach(furniture => renderOneFurniture(furniture)))
+  .then(furnitureData => furnitureData.furniture.forEach(furniture => renderOneFurniture(furniture)))
   .catch(err => console.error(err));
 }
 
