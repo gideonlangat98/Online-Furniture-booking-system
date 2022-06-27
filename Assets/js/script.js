@@ -55,12 +55,13 @@ function renderOneFurniture(furniture) {
 //fetch furniture data
 function getAllFurniture() {
   fetch('https://gideonlangat98.github.io/Online-Furniture-booking-system/db.json')
+  
   .then(resp => resp.json())
   .then(furnitureData => furnitureData.furniture.forEach(furniture => renderOneFurniture(furniture)))
   .catch(err => console.error(err));
 }
 
-function initialize () {
+function initialize (){
   getAllFurniture()
 }
 initialize()

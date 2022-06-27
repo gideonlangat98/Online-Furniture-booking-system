@@ -19,7 +19,7 @@ body {
 }
 
 .logo a{
-    font-size: 25px;
+    font-size: 22px;
     margin-left: 20px;
     text-decoration: none;
     margin-left: 50px;
@@ -34,7 +34,7 @@ body {
 .main-menu li{
     display: inline-block;
     margin-right: 50px; 
-    font-size: 25px;
+    font-size: 23px;
     text-decoration: none;
 }
 
