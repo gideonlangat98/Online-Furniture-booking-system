@@ -47,7 +47,7 @@ function renderOneFurniture(furniture) {
 
 //fetch furniture data
 function getAllFurniture() {
-  fetch('  http://localhost:3000/furniture')
+  fetch('https://gideonlangat98.github.io/Online-Furniture-booking-system/db.json')
   
   .then(resp => resp.json())
   .then(furnitureData => furnitureData.forEach(furniture => renderOneFurniture(furniture)))
