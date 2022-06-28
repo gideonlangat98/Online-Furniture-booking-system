@@ -1,11 +1,11 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    margin: 0px;
+body{
+    margin: 0;
     padding: 0;
     background-color: grey;
     font-family: sans-serif;
@@ -17,7 +17,7 @@ body {
 }
 
 .logo a{
-    font-size: 22px;
+    font-size: 25px;
     margin-left: 20px;
     text-decoration: none;
     margin-left: 50px;
@@ -37,7 +37,7 @@ body {
     justify-content: space-around;
     margin-left: 70px;
     list-style: none;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .main-menu li a{
@@ -46,9 +46,13 @@ body {
     text-decoration: none;
 }
 
+.main-menu li:hover{
+    background-color: yellow;
+}
+
 .dropdown-nav{
     padding: 16px;
-    font-size: 20px;
+    font-size: 24px;
     border: none;
 }
   
@@ -96,6 +100,10 @@ body {
     padding-bottom: 7px;
     border-radius: 5px;
 }
+
+#btn3:hover{
+    background-color: royalblue;
+}
 #home-page{
     color: darkred;
     display: flex;
@@ -121,7 +129,7 @@ body {
     border-radius: 5px;
 }
 
-.order {
+.order{
     background-color: goldenrod;
     color: black;
     padding: 15px 15px;
@@ -136,44 +144,58 @@ body {
     border-radius: 7px;
 }
 
-.form {
+.form{
     display: none;
     position: absolute;
     z-index: 9;
     margin-left: 40%;
     margin-top: 25%;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-#form-container {
+#form-container{
     max-width: 230px;
     padding: 10px;
-    background-color: white;
-    margin-left: 50px;
-    
+    background-color: rgb(32, 101, 170);
+    margin-left: 50px; 
 }
 
-#form-container input[type=text]:focus, #form-container input[type=password]:focus {
+#form-container h3{
+    color: rgb(33, 173, 150);
+}
+
+#form-container input[type=text]:focus, #form-container input[type=password]:focus{
     background-color: #ddd;
     outline: none;
 }
 
-#form-container .btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    border: none;
+#form-container .btn{
+    background-color: gold;
+    color: rgb(194, 34, 34);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
+    margin-top: 10px;
     margin-bottom:10px;
     opacity: 0.8;
 }
 
-#form-container .btn-cancel {
-    background-color: red;
+#form-container .btn-cancel{
+    background-color: rgb(0, 255, 128);
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
-#form-container .btn:hover, .order:hover {
+#form-container .btn:hover, .order:hover{
     opacity: 1;
 }
 
@@ -181,11 +203,14 @@ body {
     margin-left: 150px;
 }
 
-h2 {
-    margin-left: 100px;
-    background-color: yellow;
+h2{
+    margin-left: 70px;
+    margin-top: 50px;
+    font-family: sans-serif;
+    background-color: goldenrod;
     width: fit-content;
     padding: 10px;
+    border-radius: 7px;
 }
 
 .icons{
@@ -221,7 +246,6 @@ h2 {
 
 .featureProducts p{
     color: black;
-
 }
 
 #products h4{
@@ -313,8 +337,21 @@ img{
     margin-top: 30px;
 }
 
-.newsletter{
+#newsletter [type]{
     margin-left: 30px;
+    font-size: 20px;
+}
+
+#submit{
+    background-color: darkorange;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 5px;
+}
+
+.feedback-cont{
+    display: flex;
 }
 
 .soci{

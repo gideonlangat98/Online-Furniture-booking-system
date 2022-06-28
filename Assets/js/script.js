@@ -5,19 +5,19 @@ document.querySelector('#btn3').addEventListener('click', () => {
     alert('Shop your favorite furniture below by clicking the order button!')
 })
 
-function myOrder() {
-  alert ('YOUR ORDER HAS BEEN PLACED!')
-}
-
 function orderNow() {
   document.getElementById("myForm").style.display = "block";
 }
 
+function myOrder() {
+  alert ('YOUR ORDER HAS BEEN PLACED!')
+}
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
   alert ('Thanks for placing your order!')
 }
+
 
 //Render One furniture
 function renderOneFurniture(furniture) {
