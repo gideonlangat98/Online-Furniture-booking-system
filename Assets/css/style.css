@@ -90,6 +90,16 @@ body{
     background-color: #3e8e41;
 }
 
+.login{
+    color: black;
+    margin-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+}
+
 #btn{
     color: black;
     background-color: yellow;

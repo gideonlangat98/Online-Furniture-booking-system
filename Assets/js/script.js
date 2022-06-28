@@ -1,5 +1,4 @@
 //My code
-
 //Adding event listener to shop button
 document.querySelector('#btn3').addEventListener('click', () => {
     alert('Shop your favorite furniture below by clicking the order button!')
