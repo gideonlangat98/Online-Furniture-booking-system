@@ -24,7 +24,7 @@ Access to internet [Go Back to the top]
 
 Live Link: https://gideonlangat98.github.io/Online-Furniture-booking-system/
 
-Figma link: 
+Figma link: https://www.figma.com/file/0O29p9XiZa2lNGEXtGdhsj/Furniture-web-prototype?node-id=3%3A3
 
 Click this link to view the live application 
 
