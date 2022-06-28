@@ -65,7 +65,7 @@ body{
 .dropdown-menu{
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: rgb(143, 143, 221);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -174,8 +174,6 @@ body{
     color: rgb(194, 34, 34);
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-size: 15px;
     border-radius: 5px;
     cursor: pointer;
@@ -185,14 +183,31 @@ body{
     opacity: 0.8;
 }
 
-#form-container .btn-cancel{
-    background-color: rgb(0, 255, 128);
+.pay{
+    background-color: dimgray;
+    color: white;
     padding-right: 10px;
     padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-size: 20px;
     border-radius: 5px;
-    font-size: 15px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+#form-container .btn-cancel{
+    background-color: rgb(255, 0, 0);
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 100px;
 }
 
 #form-container .btn:hover, .order:hover{
@@ -234,7 +249,7 @@ h2{
 }
 
 .backg2-img{
-    margin-left: 200px;
+    margin-left: 130px;
     margin-top: 30px;
 }
 
@@ -254,7 +269,8 @@ h2{
 
 #products p{
     text-align: left;
-    margin-left: 100px;
+    font-size: 30px;
+    margin-left: 70px;
     margin-top: 50px;
     color: maroon;
     margin-bottom: 20px;
@@ -273,7 +289,7 @@ h2{
 }
 
 .about h3{
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
     font-size: 25px;
     margin-bottom: 10px;
@@ -286,7 +302,7 @@ h2{
 
 #shop{
     float: right;
-    margin-right: 600px;
+    margin-right: 560px;
     margin-top: 10px;
     background-color: yellow;
     font-size: 20px;
@@ -326,8 +342,8 @@ img{
     display: flex;
     justify-content: space-between;
     background-color: goldenrod;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 25px;
     margin-bottom: 50px;
 }
@@ -356,6 +372,11 @@ img{
 
 .soci{
     margin-right: 30px;
+}
+
+.copyright{
+    padding-bottom: 50px;
+    margin-left: 5px;
 }
 
 

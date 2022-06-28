@@ -13,11 +13,14 @@ function myOrder() {
   alert ('YOUR ORDER HAS BEEN PLACED!')
 }
 
+document.querySelector('.pay').addEventListener('click', () =>{
+  alert ('DEAR CUSTOMER, PAY YOUR FURNITURE COLLECTION THROUGH OUR SITES PAYBILL POINT!')
+})
+
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
   alert ('Thanks for placing your order!')
 }
-
 
 //Render One furniture
 function renderOneFurniture(furniture) {
@@ -45,12 +48,13 @@ function renderOneFurniture(furniture) {
 
 //fetch furniture data
 function getAllFurniture() {
-  fetch('https://gideonlangat98.github.io/Online-Furniture-booking-system/db.json')
+  fetch('  http://localhost:3000/furniture')
   
   .then(resp => resp.json())
-  .then(furnitureData => furnitureData.furniture.forEach(furniture => renderOneFurniture(furniture)))
+  .then(furnitureData => furnitureData.forEach(furniture => renderOneFurniture(furniture)))
   .catch(err => console.error(err));
 }
+
 
 function initialize (){
   getAllFurniture()
