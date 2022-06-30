@@ -21,7 +21,6 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
-
 //Render One furniture
 function renderOneFurniture(furniture) {
   //Build necessary furniture online shopping details
@@ -48,13 +47,12 @@ function renderOneFurniture(furniture) {
 
 //fetch furniture data
 function getAllFurniture() {
-  fetch(' http://localhost:3000/furniture')
+  fetch('https://gideonlangat98.github.io/Online-Furniture-booking-system/db.json')
   
   .then(resp => resp.json())
-  .then(furnitureData => furnitureData.forEach(furniture => renderOneFurniture(furniture)))
+  .then(furnitureData => furnitureData.furniture.forEach(furniture => renderOneFurniture(furniture)))
   .catch(err => console.error(err));
 }
-
 
 function initialize (){
   getAllFurniture()
